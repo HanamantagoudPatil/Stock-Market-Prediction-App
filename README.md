@@ -53,5 +53,5 @@ Facebook Prophet Model: fb_prophet_model.joblib
 
 
 
-You can try out the Stock Price Prediction App <"https://hnp-stock-market-prediction-app.streamlit.app/">
+You can try out the Stock Price Prediction App  <"https://hnp-stock-market-prediction-app.streamlit.app/">
 
