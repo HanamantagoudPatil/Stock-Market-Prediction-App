@@ -49,3 +49,7 @@ Model Files Used for Deployment
 LSTM Model: lstm_model.joblib
 
 Facebook Prophet Model: fb_prophet_model.joblib
+
+
+Try the App
+
