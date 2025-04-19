@@ -25,13 +25,13 @@ This repository contains a Streamlit web application for stock price prediction 
 
 Project Overview
 
-1. Data Collection
+    1. Data Collection
 
 Historical stock price data is collected using the yfinance library.
 
 Users can select a stock symbol and retrieve data for analysis and forecasting.
 
-2. Exploratory Data Analysis (EDA)
+    2. Exploratory Data Analysis (EDA)
 
 Conducted detailed EDA on stock price data, analyzing trends and seasonality.
 
@@ -43,7 +43,7 @@ Candlestick Chart (Plotly)
 
 Moving Averages (Plotly)
 
-3. Time Series Forecasting Models
+    3. Time Series Forecasting Models
 
 ARIMA & SARIMAX((Not Used in Deployment)
 
@@ -55,7 +55,7 @@ LSTM Model: A Long Short-Term Memory (LSTM) neural network trained on a 10-year 
 
 Facebook Prophet: A robust time series forecasting model that accounts for trends and seasonality.
 
-4. Deployment
+    4. Deployment
 
 The application is deployed using Streamlit Cloud, allowing users to:
 
