@@ -65,7 +65,7 @@ Choose a prediction model (LSTM or Facebook Prophet)
 
 Visualize forecasts with interactive Plotly graphs
 
-5.Model Files Used for Deployment
+  5.Model Files Used for Deployment
 
 LSTM Model: lstm_model.joblib
 
