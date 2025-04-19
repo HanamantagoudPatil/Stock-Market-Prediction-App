@@ -1,4 +1,26 @@
 # Stock-Market-Prediction-App
+## 📑 Table of Contents
+
+1. [Project Overview](#project-overview)  
+2. [Data Collection](#data-collection)  
+3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)  
+   - Close Price vs Year  
+   - Candlestick Chart (Plotly)  
+   - Moving Averages (Plotly)  
+4. [Time Series Forecasting Models](#time-series-forecasting-models)  
+   - ARIMA & SARIMAX (Not Used in Deployment)  
+   - Deep Learning & Advanced Forecasting Models  
+     - LSTM Model  
+     - Facebook Prophet  
+5. [Deployment](#deployment)  
+   - Streamlit App Features  
+   - Model Selection & Forecasting Options  
+6. [Model Files Used for Deployment](#model-files-used-for-deployment)  
+   - LSTM Model: `lstm_model.joblib`  
+   - Facebook Prophet Model: `fb_prophet_model.joblib`  
+7. [Try the App](#try-the-app)
+
+---
 
 This repository contains a Streamlit web application for stock price prediction using historical data. The project integrates multiple time series forecasting models, including ARIMA, SARIMAX, LSTM, and Facebook Prophet, to analyze stock trends and predict future prices.
 
