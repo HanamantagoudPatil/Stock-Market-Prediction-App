@@ -17,8 +17,7 @@
    - Model Selection & Forecasting Options  
 6. [Model Files Used for Deployment](#model-files-used-for-deployment)  
    - LSTM Model: `lstm_model.joblib`  
-   - Facebook Prophet Model: `fb_prophet_model.joblib`  
-7. [Try the App](#try-the-app)
+   
 
 ---
 
