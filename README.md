@@ -17,7 +17,7 @@
    - Model Selection & Forecasting Options  
 6. [Model Files Used for Deployment](#model-files-used-for-deployment)  
    - LSTM Model: `lstm_model.joblib`  
-   
+   - Facebook Prophet Model: fb_prophet_model.joblib
 
 ---
 
@@ -65,7 +65,7 @@ Choose a prediction model (LSTM or Facebook Prophet)
 
 Visualize forecasts with interactive Plotly graphs
 
-Model Files Used for Deployment
+5.Model Files Used for Deployment
 
 LSTM Model: lstm_model.joblib
 
