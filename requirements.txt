@@ -1,9 +1,11 @@
+Plaintext
+python-3.11
 streamlit
 pandas
 numpy
 yfinance
 plotly
 prophet
-tensorflow
 joblib
 scikit-learn
+tensorflow-cpu==2.15.0
