@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Aug  2 21:59:54 2026
-
-@author: 91776
-"""
-
-
 import json
 from datetime import date, timedelta
 import numpy as np
