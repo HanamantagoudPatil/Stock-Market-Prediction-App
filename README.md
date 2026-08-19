@@ -23,56 +23,75 @@
 
 This repository contains a Streamlit web application for stock price prediction using historical data. The project integrates multiple time series forecasting models, including ARIMA, SARIMAX, LSTM, and Facebook Prophet, to analyze stock trends and predict future prices.
 
-Project Overview
+**Stock Price Forecasting App**
+A Streamlit app for stock price forecasting, built on 10 years of AAPL data. Five models — Naive Baseline, ARIMA, SARIMAX, LSTM, and Facebook Prophet were trained and compared on the same leakage-free train/test split; LSTM and Prophet are the two deployed in the app.
 
-    1. Data Collection
+You can try out the Stock Price Prediction App here.
 
-Historical stock price data is collected using the yfinance library.
+Features
+Fetches historical stock market data using yfinance Supports different stock tickers and customizable date ranges Displays historical price trends using candlestick charts Calculates and visualizes moving averages Displays daily trading volume Generates 1–30 day forecasts Allows users to choose between LSTM and Facebook Prophet Compares forecasts with a Naive Baseline Provides forecast results as a downloadable CSV file
 
-Users can select a stock symbol and retrieve data for analysis and forecasting.
+Exploratory Data Analysis
+The project includes exploratory analysis of:
 
-    2. Exploratory Data Analysis (EDA)
+Historical closing prices
 
-Conducted detailed EDA on stock price data, analyzing trends and seasonality.
+Trading volume
 
-Visualizations include:
+Moving averages
 
-Close Price vs Year
+Daily returns
 
-Candlestick Chart (Plotly)
+Price trends
 
-Moving Averages (Plotly)
+Stationarity
 
-    3. Time Series Forecasting Models
+ACF and PACF
 
-ARIMA & SARIMAX((Not Used in Deployment)
+Seasonal decomposition
 
-Traditional time series models used to analyze historical patterns and establish benchmark predictions.
+The complete methodology, EDA, model development, and evaluation are available in:
 
-Deep Learning & Advanced Forecasting Models (Used in Deployment)
+Stock_price_analysis_and_forecasting.ipynb
 
-LSTM Model: A Long Short-Term Memory (LSTM) neural network trained on a 10-year dataset to capture complex patterns in stock prices.
+Models Used
+1. Naive Baseline
+Uses the previous day's closing price as the prediction for the next day.
 
-Facebook Prophet: A robust time series forecasting model that accounts for trends and seasonality.
+This provides a simple benchmark to determine whether the machine learning and statistical models provide meaningful improvement.
 
-    4. Deployment
+2. ARIMA
+A classical time-series forecasting model used as a benchmark for univariate stock-price forecasting.
 
-The application is deployed using Streamlit Cloud, allowing users to:
+3. SARIMAX
+An extension of ARIMA that can model seasonal patterns and incorporate additional variables when available.
 
-Select a stock and define forecast duration (1 to 30 days)
+4. LSTM
+A Long Short-Term Memory neural network designed for sequential and time-series data. The model was trained using historical AAPL data.
 
-Choose a prediction model (LSTM or Facebook Prophet)
+The deployed LSTM model consists of:
 
-Visualize forecasts with interactive Plotly graphs
+lstm_model.keras
 
-     5.Model Files Used for Deployment
+scaler.joblib
 
-LSTM Model: lstm_model.joblib
+5. Facebook Prophet
+A time-series forecasting model developed by Facebook (Meta).
 
-Facebook Prophet Model: fb_prophet_model.joblib
+Unlike the saved LSTM model, Prophet refits on the data selected by the user each time a forecast is requested. Therefore, it can be used with different stock tickers and does not depend on a fixed historical price range.
 
+Model Evaluation
+All models were evaluated using the same chronological train/test split to avoid data leakage.
 
+The Naive Baseline was included as an important benchmark because stock prices often behave similarly to a random walk.
 
+The evaluation showed that no model consistently outperformed the naive baseline for short-term, one-day-ahead stock-price prediction. This highlights the difficulty of predicting daily stock prices and demonstrates why a simple baseline should be included when evaluating time-series forecasting models.
+
+Known Limitations
+No model consistently outperformed the naive baseline for 1-day-ahead prediction, highlighting the difficulty of short-term stock-price forecasting. LSTM is trained only on AAPL (Apple stock data), so predictions for other stocks are not reliable.
+
+Technologies
+Python | Pandas | NumPy | Scikit-learn | Statsmodels | TensorFlow/Keras | Prophet | yfinance | Streamlit | Plotly
 
 
 
