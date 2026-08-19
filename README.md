@@ -4,6 +4,10 @@
 A Streamlit app for stock price forecasting, built on 10 years of AAPL data. Five models — Naive Baseline, ARIMA, SARIMAX, LSTM, and Facebook Prophet were trained and compared on the same leakage-free train/test split; LSTM and Prophet are the two deployed in the app.
 
 
+    ****Try the App****
+
+You can try out the Stock Price Prediction App [here](https://hnp-stock-market-prediction.streamlit.app/)
+
 Features
 Fetches historical stock market data using yfinance Supports different stock tickers and customizable date ranges Displays historical price trends using candlestick charts Calculates and visualizes moving averages Displays daily trading volume Generates 1–30 day forecasts Allows users to choose between LSTM and Facebook Prophet Compares forecasts with a Naive Baseline Provides forecast results as a downloadable CSV file
 
@@ -69,8 +73,3 @@ No model consistently outperformed the naive baseline for 1-day-ahead prediction
 Technologies
 Python | Pandas | NumPy | Scikit-learn | Statsmodels | TensorFlow/Keras | Prophet | yfinance | Streamlit | Plotly
 
-
-
-    ****Try the App****
-
-You can try out the Stock Price Prediction App [here](https://hnp-stock-market-prediction.streamlit.app/)
